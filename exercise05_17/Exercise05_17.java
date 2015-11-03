@@ -22,7 +22,7 @@ Write a program that prompts the user to enter an integer from
             System.exit(1);
         }
         
-        for (int i = 1; i <= n; i++){
+        for (int i = 1; i <= n; i++) {
             //add spaces in front
             for (int j = 1; j <= n-i; j++) {
                 System.out.printf("  ");
