@@ -13,17 +13,17 @@ import java.util.Scanner;
 public class Exercise05_47 {
 
     public static void main(String[] args) {
-        //get first 9 digits of ISBN
         System.out.println("Enter first 12 digits of ISBN:");
         Scanner s = new Scanner(System.in);
         
         String number = s.nextLine();
         int sum = 0;
-        //loop through each character in string
+        
+        //loop through each character in input
         for (int i = 0; i < number.length(); i++){
             char ch = number.charAt(i);
             int num = Character.getNumericValue(ch);
-            //if at odd position, sum += num; otherwise sum += 3*num
+            //if character is at odd position, sum += num; otherwise sum += 3*num
             if (i % 2 == 0) {
                 sum += num;
             } else {
